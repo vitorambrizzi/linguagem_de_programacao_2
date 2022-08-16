@@ -16,7 +16,7 @@ class Product{
 
     // Methods (Functions)
     function setName($name){
-        $this->name = $name;
+        $this->name = str_replace("'", "°", $name);
     }
 
     function getName(){
