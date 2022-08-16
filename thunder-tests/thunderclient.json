@@ -1,0 +1,36 @@
+[
+  {
+    "_id": "75d708e3-fd98-4fcc-a428-21a6a875bbaa",
+    "colId": "fd75e92e-5ab8-4406-a93d-a0a5a6267fac",
+    "containerId": "",
+    "name": "Estados do Brasil",
+    "url": "https://servicodados.ibge.gov.br/api/v1/localidades/estados",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-08-16T19:38:59.370Z",
+    "modified": "2022-08-16T19:38:59.370Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "7b5fcb8c-fef7-46c3-b68b-7353af39a4e7",
+    "colId": "fd75e92e-5ab8-4406-a93d-a0a5a6267fac",
+    "containerId": "",
+    "name": "Municípios por Estado",
+    "url": "https://servicodados.ibge.gov.br/api/v1/localidades/estados/{UF}/municipios",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-08-16T19:44:45.053Z",
+    "modified": "2022-08-16T19:44:45.053Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "UF",
+        "value": "SP",
+        "isPath": true
+      }
+    ],
+    "tests": []
+  }
+]
