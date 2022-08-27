@@ -1,5 +1,6 @@
-# API PHP using Object-Oriented Programming
-Back-End PHP Object-Oriented Programming API, for the Linguagem de Programação II (LP2I3) subject at IFSP-Caraguatatuba. 2022-2.
+# Linguagem de Programação II
+Exercises related to PHP Object-Oriented Programming, with the development of an Back-End API.<br>
 
-###Author:
-Vítor Ambrizzi
+**Author:** Vítor Ambrizzi<br>
+**Institution:** IFSP Câmpus Caraguatatuba<br>
+**Semester:** 2022-2<br>
