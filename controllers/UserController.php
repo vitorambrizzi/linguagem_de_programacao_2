@@ -1,7 +1,7 @@
 <?php
 
 class UserController {
-    function signUp() {
+    function signup() {
         // Get the inserts
         $name = $_POST['name'];
         $email = $_POST['email'];
