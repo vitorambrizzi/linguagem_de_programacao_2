@@ -9,7 +9,7 @@ class Output {
     }
 
     function notFound() {
-        $result['message'] = "API endpoint not found!";
+        $result['error']['message'] = 'API endpoint not found!';
         $this->response($result, 404);
     }
 }
