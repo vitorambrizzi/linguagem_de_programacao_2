@@ -32,5 +32,41 @@
       }
     ],
     "tests": []
+  },
+  {
+    "_id": "8456cfaa-c413-46c2-9fa1-0d563f1edcc4",
+    "colId": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
+    "containerId": "",
+    "name": "user/signup",
+    "url": "http://localhost/vitor_ambrizzi/linguagem_de_programacao_2-LP2I3/user/signup",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-08-31T02:01:05.537Z",
+    "modified": "2022-08-31T02:01:05.537Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "Vítor Ambrizzi"
+        },
+        {
+          "name": "email",
+          "value": "ambrizzivitor@gmail.com"
+        },
+        {
+          "name": "pass",
+          "value": "Queijos2013!"
+        },
+        {
+          "name": "avatar",
+          "value": "https://avatars.githubusercontent.com/u/4259630?v=4"
+        }
+      ]
+    },
+    "tests": []
   }
 ]
