@@ -34,15 +34,15 @@
     "tests": []
   },
   {
-    "_id": "8456cfaa-c413-46c2-9fa1-0d563f1edcc4",
+    "_id": "6ea4fe1b-6e5c-4327-adbd-9045514d04ee",
     "colId": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
     "containerId": "",
-    "name": "user/signup",
-    "url": "http://localhost/vitor_ambrizzi/linguagem_de_programacao_2-LP2I3/user/signup",
+    "name": "user/sign-up",
+    "url": "http://localhost/vitor_ambrizzi/2022-2/linguagem_de_programacao_2-LP2I3/user/sign-up",
     "method": "POST",
     "sortNum": 10000,
-    "created": "2022-08-31T02:01:05.537Z",
-    "modified": "2022-08-31T02:01:05.537Z",
+    "created": "2022-09-06T18:14:16.703Z",
+    "modified": "2022-09-06T18:19:16.020Z",
     "headers": [],
     "params": [],
     "body": {
@@ -51,19 +51,19 @@
       "form": [
         {
           "name": "name",
-          "value": "Vítor Ambrizzi"
+          "value": "Breno Machado"
         },
         {
           "name": "email",
-          "value": "ambrizzivitor@gmail.com"
+          "value": "brenomachado@gmail.com"
         },
         {
           "name": "pass",
-          "value": "Queijos2013!"
+          "value": "789789"
         },
         {
           "name": "avatar",
-          "value": "https://avatars.githubusercontent.com/u/4259630?v=4"
+          "value": "https://suap.ifsp.edu.br/media/alunos/223534.UYbqnnvAEp4a.jpg"
         }
       ]
     },
