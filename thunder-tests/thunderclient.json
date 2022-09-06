@@ -42,7 +42,7 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2022-09-06T18:14:16.703Z",
-    "modified": "2022-09-06T18:19:16.020Z",
+    "modified": "2022-09-06T20:40:32.992Z",
     "headers": [],
     "params": [],
     "body": {
@@ -67,6 +67,20 @@
         }
       ]
     },
+    "tests": []
+  },
+  {
+    "_id": "e3ac6017-11b8-4a91-ad38-5043fc444264",
+    "colId": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
+    "containerId": "",
+    "name": "user/list",
+    "url": "http://localhost/vitor_ambrizzi/2022-2/linguagem_de_programacao_2-LP2I3/user/list",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-09-06T20:41:32.439Z",
+    "modified": "2022-09-06T20:41:55.723Z",
+    "headers": [],
+    "params": [],
     "tests": []
   }
 ]
