@@ -42,6 +42,27 @@ class User {
             $db->dbError($e);
         }
     }
+
+    function list() {
+        $db = new Database();
+        $conn = $db->connect();
+
+        try {
+            // Creating the SQL statement
+            $stmt = $conn->prepare("SELECT * FROM users");
+
+            // Executing the SQL statement
+            $stmt->execute();
+
+            // Fetching the resulting rows and ending the connection
+            $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $conn = null;
+
+            return $users;
+        } catch (PDOException $e) {
+            $db->dbError($e);
+        }
+    }
 }
 
 ?>
