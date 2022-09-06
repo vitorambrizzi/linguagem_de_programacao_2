@@ -2,6 +2,9 @@
 
 class UserController {
     function signup() {
+        $route = new Router;
+        $route->allowedMethod('POST');
+
         // Get the inserts
         $name = $_POST['name'];
         $email = $_POST['email'];
@@ -24,6 +27,20 @@ class UserController {
         $result['user']['avatar'] = $avatar;
 
         $output = new Output();
+        $output->response($result);
+    }
+
+    function list() {
+        $route = new Router();
+        $route->allowedMethod('GET');
+
+        $user = new User(NULL, NULL, NULL, NULL, NULL);
+        $list = $user->list();
+
+        $result['success']['message'] = 'User list has been successfully listed!';
+        $result['data'] = $list;
+
+        $output = new Output;
         $output->response($result);
     }
 }
