@@ -43,6 +43,31 @@ class UserController {
         $output = new Output;
         $output->response($result);
     }
+    
+    function byId() {
+        $route = new Router();
+        $route->allowedMethod('GET');
+        $output = new Output;
+        
+        if (isset($_GET['id'])) {
+            $id = $_GET['id'];
+
+            $user = new User($id, NULL, NULL, NULL, NULL);
+            $userData = $user->getById();
+    
+            if ($userData) {
+                $result['success']['message'] = 'User successfully selected!';
+                $result['data'] = $userData;
+                $output->response($result);
+            } else {
+                $result['error']['message'] = 'User not found!';
+                $output->response($result, 404);
+            }
+        }
+        
+        $result['error']['message'] = "ID parameter required!";
+        $output->response($result, 406);
+    }
 }
 
 ?>

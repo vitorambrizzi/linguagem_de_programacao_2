@@ -63,6 +63,30 @@ class User {
             $db->dbError($e);
         }
     }
+
+    function getById() {
+        $db = new Database();
+        $conn = $db->connect();
+
+        try {
+            // Creating the SQL statement
+            $stmt = $conn->prepare("SELECT * FROM users WHERE id = :id");
+
+            // Binding parameters
+            $stmt->bindParam(':id', $this->id);
+
+            // Executing the SQL statement
+            $stmt->execute();
+
+            // Fetching the resulting rows and ending the connection
+            $user = $stmt->fetch(PDO::FETCH_ASSOC);
+            $conn = null;
+
+            return $user;
+        } catch (PDOException $e) {
+            $db->dbError($e);
+        }
+    }
 }
 
 ?>
