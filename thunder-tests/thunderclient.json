@@ -1,39 +1,5 @@
 [
   {
-    "_id": "75d708e3-fd98-4fcc-a428-21a6a875bbaa",
-    "colId": "fd75e92e-5ab8-4406-a93d-a0a5a6267fac",
-    "containerId": "",
-    "name": "Estados do Brasil",
-    "url": "https://servicodados.ibge.gov.br/api/v1/localidades/estados",
-    "method": "GET",
-    "sortNum": 10000,
-    "created": "2022-08-16T19:38:59.370Z",
-    "modified": "2022-08-16T19:38:59.370Z",
-    "headers": [],
-    "params": [],
-    "tests": []
-  },
-  {
-    "_id": "7b5fcb8c-fef7-46c3-b68b-7353af39a4e7",
-    "colId": "fd75e92e-5ab8-4406-a93d-a0a5a6267fac",
-    "containerId": "",
-    "name": "Municípios por Estado",
-    "url": "https://servicodados.ibge.gov.br/api/v1/localidades/estados/{UF}/municipios",
-    "method": "GET",
-    "sortNum": 20000,
-    "created": "2022-08-16T19:44:45.053Z",
-    "modified": "2022-08-16T19:44:45.053Z",
-    "headers": [],
-    "params": [
-      {
-        "name": "UF",
-        "value": "SP",
-        "isPath": true
-      }
-    ],
-    "tests": []
-  },
-  {
     "_id": "6ea4fe1b-6e5c-4327-adbd-9045514d04ee",
     "colId": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
     "containerId": "",
@@ -81,6 +47,26 @@
     "modified": "2022-09-06T20:41:55.723Z",
     "headers": [],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b63d1ae8-83f4-4b0e-a952-1cfdbf471f2c",
+    "colId": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
+    "containerId": "",
+    "name": "user/by-id",
+    "url": "http://localhost/vitor_ambrizzi/2022-2/linguagem_de_programacao_2-LP2I3/user/by-id?id=3234234",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2022-09-13T18:41:08.531Z",
+    "modified": "2022-09-13T18:46:39.973Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "3234234",
+        "isPath": false
+      }
+    ],
     "tests": []
   }
 ]

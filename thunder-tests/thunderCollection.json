@@ -1,12 +1,5 @@
 [
   {
-    "_id": "fd75e92e-5ab8-4406-a93d-a0a5a6267fac",
-    "colName": "Localidades",
-    "created": "2022-08-16T19:38:59.367Z",
-    "sortNum": 10000,
-    "folders": []
-  },
-  {
     "_id": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
     "colName": "Linguagem de Programação II (LP2I3)",
     "created": "2022-08-31T02:01:05.535Z",
