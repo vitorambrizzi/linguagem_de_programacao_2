@@ -49,7 +49,7 @@ class User {
 
         try {
             // Creating the SQL statement
-            $stmt = $conn->prepare("SELECT * FROM users");
+            $stmt = $conn->prepare("SELECT id, name, email, avatar FROM users");
 
             // Executing the SQL statement
             $stmt->execute();
@@ -70,7 +70,7 @@ class User {
 
         try {
             // Creating the SQL statement
-            $stmt = $conn->prepare("SELECT * FROM users WHERE id = :id");
+            $stmt = $conn->prepare("SELECT id, name, email, avatar FROM users WHERE id = :id");
 
             // Binding parameters
             $stmt->bindParam(':id', $this->id);
