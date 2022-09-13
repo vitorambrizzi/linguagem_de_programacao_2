@@ -54,19 +54,13 @@
     "colId": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
     "containerId": "",
     "name": "user/by-id",
-    "url": "http://localhost/vitor_ambrizzi/2022-2/linguagem_de_programacao_2-LP2I3/user/by-id?id=3234234",
+    "url": "http://localhost/vitor_ambrizzi/2022-2/linguagem_de_programacao_2-LP2I3/user/by-id",
     "method": "GET",
     "sortNum": 30000,
     "created": "2022-09-13T18:41:08.531Z",
-    "modified": "2022-09-13T18:46:39.973Z",
+    "modified": "2022-09-13T18:56:41.051Z",
     "headers": [],
-    "params": [
-      {
-        "name": "id",
-        "value": "3234234",
-        "isPath": false
-      }
-    ],
+    "params": [],
     "tests": []
   }
 ]
