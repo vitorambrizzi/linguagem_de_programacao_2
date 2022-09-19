@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Set-2022 às 20:20
+-- Tempo de geração: 19-Set-2022 às 21:28
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.0.13
 
@@ -40,9 +40,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `pass`, `avatar`) VALUES
-(1, 'Vítor Ambrizzi', 'ambrizzivitor@gmail.com', '601f1889667efaebb33b8c12572835da3f027f78', 'https://suap.ifsp.edu.br/media/alunos/150x200/167027.kUNL9T6s3ohT.jpg'),
-(2, 'Renan Cavichi', 'renancavichi@gmail.com', 'ccbe91b1f19bd31a1365363870c0eec2296a61c1', 'https://avatars.githubusercontent.com/u/4259630?v=4'),
-(3, 'Breno Machado', 'brenomachado@gmail.com', '1a2bf0adea0f4b41ed9f7a02d31fa535d5743f3e', 'https://suap.ifsp.edu.br/media/alunos/223534.UYbqnnvAEp4a.jpg');
+(4, 'Renan Cavichi', 'renancavichi@gmail.com', 'a13fec1deb7c2308fbecf7b2698ecf93413c52e3', 'https://avatars.githubusercontent.com/u/4259630?v=4'),
+(5, 'Vitor Ambrizzi', 'ambrizzivitor@gmail.com', 'fc683af1f7957ebc4dcb77738ab688b5dd84881a', 'https://avatars.githubusercontent.com/u/54189051?v=4'),
+(6, 'Allan Gabriel', 'allangabriel@gmail.com', 'dfd68fe9fd793aa349622bf9ef05b39de5a36baa', 'https://avatars.githubusercontent.com/u/104521672?v=4'),
+(7, 'Breno Machado', 'brenomachado@gmail.com', '245a72e7d46b8620df10255ec5bb00b79893dc28', 'https://avatars.githubusercontent.com/u/101892969?v=4'),
+(8, 'Micaella Larissa', 'micaellalarissa@gmail.com', 'd6f603bec82af995a0df85f02b6407e57f23dcaf', 'https://avatars.githubusercontent.com/u/110495667?v=4');
 
 --
 -- Índices para tabelas despejadas
@@ -62,7 +64,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de tabela `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
