@@ -8,7 +8,7 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2022-09-06T18:14:16.703Z",
-    "modified": "2022-09-06T20:40:32.992Z",
+    "modified": "2022-09-19T18:43:10.780Z",
     "headers": [],
     "params": [],
     "body": {
@@ -17,19 +17,19 @@
       "form": [
         {
           "name": "name",
-          "value": "Breno Machado"
+          "value": "Renan Cavichi"
         },
         {
           "name": "email",
-          "value": "brenomachado@gmail.com"
+          "value": "renancavichi@gmail.com"
         },
         {
           "name": "pass",
-          "value": "789789"
+          "value": "Renan123"
         },
         {
           "name": "avatar",
-          "value": "https://suap.ifsp.edu.br/media/alunos/223534.UYbqnnvAEp4a.jpg"
+          "value": "https://avatars.githubusercontent.com/u/4259630?v=4"
         }
       ]
     },
