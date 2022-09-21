@@ -68,6 +68,35 @@ class UserController {
         $result['error']['message'] = "ID parameter required!";
         $output->response($result, 406);
     }
+
+    function delete() {
+        $route = new Router();
+        $route->allowedMethod('DELETE');
+        $output = new Output;
+
+        // Gets .json input by body .json
+       $jsonData = file_get_contents('php://input');
+       $data = json_decode($jsonData, true);
+        
+        if (isset($data['id'])) {
+            $id = $data['id'];
+        } else {
+            $result['error']['message'] = "ID parameter required!";
+            $output->response($result, 406);
+        }
+
+        $user = new User($id, null, null, null, null);
+        $deleted = $user->delete();
+
+        // Messaging the delete operation status
+        if ($deleted) {
+            $result['success']['message'] = "User $id deleted successfully!";
+            $output->response($result);
+        } else {
+            $result['error']['message'] = "User $id not found!";
+            $output->response($result, 404);
+        }
+    }
 }
 
 ?>
