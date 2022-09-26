@@ -16,8 +16,7 @@ class User {
     }
 
     function create() {
-        $db = new Database();
-        $conn = $db->connect();
+        $conn = Database::connect();
 
         try {
             // Creating the SQL statement
@@ -39,13 +38,12 @@ class User {
 
             return $id;
         } catch (PDOException $e) {
-            $db->dbError($e);
+            Database::dbError($e);
         }
     }
 
     function list() {
-        $db = new Database();
-        $conn = $db->connect();
+        $conn = Database::connect();
 
         try {
             // Creating the SQL statement
@@ -60,13 +58,12 @@ class User {
 
             return $users;
         } catch (PDOException $e) {
-            $db->dbError($e);
+            Database::dbError($e);
         }
     }
 
     function getById() {
-        $db = new Database();
-        $conn = $db->connect();
+        $conn = Database::connect();
 
         try {
             // Creating the SQL statement
@@ -84,13 +81,12 @@ class User {
 
             return $user;
         } catch (PDOException $e) {
-            $db->dbError($e);
+            Database::dbError($e);
         }
     }
 
     function delete() {
-        $db = new Database();
-        $conn = $db->connect();
+        $conn = Database::connect();
 
         try {
             // Creating the SQL statement
@@ -111,7 +107,7 @@ class User {
                 return false;
             }
         } catch (PDOException $e) {
-            $db->dbError($e);
+            Database::dbError($e);
         }
     }
 }
