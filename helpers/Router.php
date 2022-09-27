@@ -39,8 +39,7 @@ class Router {
     static function handleCORS() {
         if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
             header('Access-Control-Allow-Origin: ' . ALLOWED_HOSTS);
-            header('Access-Control-Allow-Methods: GET, POST, OPTIONS, DELETE, PUT');
-//          header('Access-Control-Allow-Headers: Access-Token');
+            header('Access-Control-Allow-Methods: ' . ALLOWED_METHODS);
             die;
         }
     }
