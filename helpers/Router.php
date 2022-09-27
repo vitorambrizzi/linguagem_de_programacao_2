@@ -1,6 +1,8 @@
 <?php
 class Router {
     static function gateKeeper() {
+        self::handleCORS();
+
         // Gets the requested URL
         $url = $_SERVER['REQUEST_URI'];
 
