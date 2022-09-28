@@ -1,7 +1,5 @@
 {
     "material-icon-theme.folders.associations": {
-        "thunder-tests": "Api",
-        "lessons-oo": "Docs",
-        "lesson-01": "Docs",
+        "thunder-tests": "Api"
     }
 }
