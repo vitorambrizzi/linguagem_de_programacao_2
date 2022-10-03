@@ -75,7 +75,29 @@ class UserController {
             $result['success']['message'] = "User $id deleted successfully!";
             Output::response($result);
         } else {
-            $result['error']['message'] = "User $id not found!";
+            $result['error']['message'] = "User $id not found to be deleted!";
+            Output::response($result, 404);
+        }
+    }
+
+    function update() {
+        Router::allowedMethod('PUT');
+
+        $data = Input::getData();
+        $id = $data['id'];
+        $name = $data['name'];
+        $email = $data['email'];
+        $avatar = $data['avatar'];
+
+        $user = new User($id, $name, $email, null, $avatar);
+        $updated = $user->update();
+
+        if ($updated) {
+            $result['success']['message'] = 'User updated successfully!';
+            $result['user'] = $data;
+            Output::response($result);
+        } else {
+            $result['error']['message'] = "User $id not found to be updated!";
             Output::response($result, 404);
         }
     }

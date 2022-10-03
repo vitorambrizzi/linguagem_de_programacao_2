@@ -1,5 +1,4 @@
 <?php
-
 class User {
     private $id;
     private $name;
@@ -110,6 +109,28 @@ class User {
             Database::dbError($e);
         }
     }
-}
 
+    function update() {
+        $conn = Database::connect();
+
+        try {
+            $stmt = $conn->prepare("UPDATE users SET name = :name, email = :email, avatar = :avatar WHERE id = :id");
+            $stmt->bindParam(':name', $this->name);
+            $stmt->bindParam(':email', $this->email);
+            $stmt->bindParam(':avatar', $this->avatar);
+            $stmt->bindParam(':id', $this->id);
+            $stmt->execute();
+
+            $rowsAffected = $stmt->rowCount();
+            $conn = null;
+            if ($rowsAffected) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (PDOException $e) {
+            Database::dbError($e);
+        }
+    }
+}
 ?>
