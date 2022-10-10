@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "_id": "6016280c-310e-4bc9-969c-949dbcde1b64",
+    "name": "Localhost",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2022-10-10T18:51:34.920Z",
+    "modified": "2022-10-10T18:52:12.567Z",
+    "data": [
+      {
+        "name": "BASE_PATH",
+        "value": "http://localhost/vitor_ambrizzi/2022-2/linguagem_de_programacao_2-LP2I3/"
+      }
+    ]
+  }
+]

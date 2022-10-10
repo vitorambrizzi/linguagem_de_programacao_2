@@ -4,11 +4,11 @@
     "colId": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
     "containerId": "",
     "name": "user/sign-up",
-    "url": "http://localhost/vitor_ambrizzi/2022-2/linguagem_de_programacao_2-LP2I3/user/sign-up",
+    "url": "{{BASE_PATH}}user/sign-up",
     "method": "POST",
     "sortNum": 10000,
     "created": "2022-09-06T18:14:16.703Z",
-    "modified": "2022-09-19T18:43:10.780Z",
+    "modified": "2022-10-10T18:52:53.918Z",
     "headers": [],
     "params": [],
     "body": {
@@ -40,11 +40,11 @@
     "colId": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
     "containerId": "",
     "name": "user/list",
-    "url": "http://localhost/vitor_ambrizzi/2022-2/linguagem_de_programacao_2-LP2I3/user/list",
+    "url": "{{BASE_PATH}}user/list",
     "method": "GET",
     "sortNum": 20000,
     "created": "2022-09-06T20:41:32.439Z",
-    "modified": "2022-09-06T20:41:55.723Z",
+    "modified": "2022-10-10T18:53:08.879Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -54,13 +54,51 @@
     "colId": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
     "containerId": "",
     "name": "user/by-id",
-    "url": "http://localhost/vitor_ambrizzi/2022-2/linguagem_de_programacao_2-LP2I3/user/by-id",
+    "url": "{{BASE_PATH}}user/by-id",
     "method": "GET",
     "sortNum": 30000,
     "created": "2022-09-13T18:41:08.531Z",
-    "modified": "2022-09-13T19:33:09.058Z",
+    "modified": "2022-10-10T18:53:22.126Z",
     "headers": [],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "eeb17588-c7ed-4736-b7da-3c596f7194fc",
+    "colId": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
+    "containerId": "",
+    "name": "auth/login",
+    "url": "{{BASE_PATH}}auth/login",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2022-10-10T19:01:03.106Z",
+    "modified": "2022-10-10T19:01:03.106Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\": \"vitor@gmail.com\",\n  \"pass\": \"123\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "182a0bd7-f3ca-4c06-ba9c-90deaed4e5c2",
+    "colId": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
+    "containerId": "",
+    "name": "auth/logout",
+    "url": "{{BASE_PATH}}auth/logout",
+    "method": "POST",
+    "sortNum": 50000,
+    "created": "2022-10-10T20:19:20.158Z",
+    "modified": "2022-10-10T20:19:20.158Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"idUser\": \"9\",\n  \"token\": \"8fd4ef4c44c3d475617d5c09600abc94b46e5128\"\n}",
+      "form": []
+    },
     "tests": []
   }
 ]
