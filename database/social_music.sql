@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19-Set-2022 às 21:28
+-- Tempo de geração: 11-Out-2022 às 19:37
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.0.13
 
@@ -20,6 +20,19 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `social_music`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `session`
+--
+
+CREATE TABLE `session` (
+  `id` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `token` varchar(256) NOT NULL,
+  `client` varchar(500) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -51,20 +64,44 @@ INSERT INTO `users` (`id`, `name`, `email`, `pass`, `avatar`) VALUES
 --
 
 --
+-- Índices para tabela `session`
+--
+ALTER TABLE `session`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_user_session_id_users` (`id_user`);
+
+--
 -- Índices para tabela `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
+-- AUTO_INCREMENT de tabela `session`
+--
+ALTER TABLE `session`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT de tabela `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `session`
+--
+ALTER TABLE `session`
+  ADD CONSTRAINT `id_user_session_id_users` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
