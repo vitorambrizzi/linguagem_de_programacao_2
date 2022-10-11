@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 11-Out-2022 às 19:37
+-- Tempo de geração: 11-Out-2022 às 22:00
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.0.13
 
@@ -45,19 +45,20 @@ CREATE TABLE `users` (
   `name` varchar(100) NOT NULL,
   `email` varchar(150) NOT NULL,
   `pass` varchar(200) NOT NULL,
-  `avatar` varchar(400) NOT NULL
+  `avatar` varchar(400) NOT NULL,
+  `role` varchar(15) NOT NULL DEFAULT 'client'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `pass`, `avatar`) VALUES
-(4, 'Renan Cavichi', 'renancavichi@gmail.com', 'a13fec1deb7c2308fbecf7b2698ecf93413c52e3', 'https://avatars.githubusercontent.com/u/4259630?v=4'),
-(5, 'Vitor Ambrizzi', 'ambrizzivitor@gmail.com', 'fc683af1f7957ebc4dcb77738ab688b5dd84881a', 'https://avatars.githubusercontent.com/u/54189051?v=4'),
-(6, 'Allan Gabriel', 'allangabriel@gmail.com', 'dfd68fe9fd793aa349622bf9ef05b39de5a36baa', 'https://avatars.githubusercontent.com/u/104521672?v=4'),
-(7, 'Breno Machado', 'brenomachado@gmail.com', '245a72e7d46b8620df10255ec5bb00b79893dc28', 'https://avatars.githubusercontent.com/u/101892969?v=4'),
-(8, 'Micaella Larissa', 'micaellalarissa@gmail.com', 'd6f603bec82af995a0df85f02b6407e57f23dcaf', 'https://avatars.githubusercontent.com/u/110495667?v=4');
+INSERT INTO `users` (`id`, `name`, `email`, `pass`, `avatar`, `role`) VALUES
+(4, 'Renan Cavichi', 'renancavichi@gmail.com', 'a13fec1deb7c2308fbecf7b2698ecf93413c52e3', 'https://avatars.githubusercontent.com/u/4259630?v=4', 'admin'),
+(5, 'Vitor Ambrizzi', 'ambrizzivitor@gmail.com', 'fc683af1f7957ebc4dcb77738ab688b5dd84881a', 'https://avatars.githubusercontent.com/u/54189051?v=4', 'client'),
+(6, 'Allan Gabriel', 'allangabriel@gmail.com', 'dfd68fe9fd793aa349622bf9ef05b39de5a36baa', 'https://avatars.githubusercontent.com/u/104521672?v=4', 'client'),
+(7, 'Breno Machado', 'brenomachado@gmail.com', '245a72e7d46b8620df10255ec5bb00b79893dc28', 'https://avatars.githubusercontent.com/u/101892969?v=4', 'client'),
+(8, 'Micaella Larissa', 'micaellalarissa@gmail.com', 'd6f603bec82af995a0df85f02b6407e57f23dcaf', 'https://avatars.githubusercontent.com/u/110495667?v=4', 'client');
 
 --
 -- Índices para tabelas despejadas
