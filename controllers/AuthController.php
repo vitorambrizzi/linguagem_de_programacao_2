@@ -17,7 +17,10 @@ class AuthController {
             $sessionId = $session->create();
             if ($sessionId) {
                 $result['success']['message'] = 'User logged successfully!';
-                $result['data']['token'] = $token; 
+                $result['data']['idUser'] = $idUser;
+                $result['data']['token'] = $token;
+                setcookie('id_user', $idUser, (time() + 60 * 60 * 24 * 30 * 6), '/');
+                setcookie('token', $token, (time() + 60 * 60 * 24 * 30 * 6), '/');
                 Output::response($result);
             } else {
                 $result['error']['message'] = 'Error creating session! Please, try again!';
@@ -31,10 +34,17 @@ class AuthController {
 
     public function logout() {
         Router::allowedMethod('POST');
-    
+
+        $idUser = $_COOKIE['id_user'];
+        $token = $_COOKIE['token'];
+
         $data = Input::getData();
-        $idUser = $data['idUser'];
-        $token = $data['token'];
+        if (!$idUser) {
+            $idUser = $data['idUser'];
+        }
+        if (!$token) {
+            $token = $data['token'];
+        }
 
         $session = new Session(null, $idUser, $token, null);
         $wasDeleted = $session->delete();
