@@ -137,7 +137,7 @@ class User {
         $conn = Database::connect();
 
         try {
-            $stmt = $conn->prepare("SELECT id FROM users WHERE email = :email AND pass = :pass");
+            $stmt = $conn->prepare("SELECT id, role FROM users WHERE email = :email AND pass = :pass");
             $stmt->bindParam(':email', $this->email);
             $stmt->bindParam(':pass', $this->pass);
             $stmt->execute();
@@ -145,7 +145,7 @@ class User {
             $conn = null;
 
             if (is_array($user)) {
-                return $user['id'];
+                return $user;
             } else {
                 return false;
             }
