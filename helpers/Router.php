@@ -37,12 +37,13 @@ class Router {
     }
 
     static function protected() {
-        if (isset($_SERVER['HTTP_AUTHORIZATION'])) {
-            $authorization = $_SERVER['HTTP_AUTHORIZATION'];
+        $headers = apache_request_headers();
+        if (isset($headers['Authorization'])) {
+            $authorization = $headers['Authorization'];
         } else {
             $authorization = 'Not set';
         }
-        $result['auth']['message'] = $authorization;
+        $result['auth'] = $authorization;
         Output::response($result);
     }
 
