@@ -100,5 +100,34 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "015ab6a4-141b-4ab9-bfc5-de8ac0268d9f",
+    "colId": "f8f1e1b2-395d-4cc4-af0b-a3a507443e28",
+    "containerId": "",
+    "name": "user/update",
+    "url": "{{BASE_PATH}}user/update",
+    "method": "PUT",
+    "sortNum": 60000,
+    "created": "2022-10-29T13:39:34.576Z",
+    "modified": "2022-10-29T13:39:34.576Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "id token"
+      },
+      {
+        "name": "Accept",
+        "value": "*/*",
+        "isDisabled": true
+      },
+      {
+        "name": "User-Agent",
+        "value": "Thunder Client (https://www.thunderclient.com)",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
   }
 ]
