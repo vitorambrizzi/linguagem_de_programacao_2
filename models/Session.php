@@ -57,7 +57,7 @@ class Session {
         $conn = Database::connect();
 
         try {
-            $stmt = conn->prepare(
+            $stmt = $conn->prepare(
                 "SELECT s.id_user FROM session as s
                 INNER JOIN users as u ON s.id_user = u.id
                 WHERE s.id_user = :id_user AND s.token = :token AND u.role like :role;"
