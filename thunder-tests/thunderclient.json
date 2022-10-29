@@ -72,12 +72,12 @@
     "method": "POST",
     "sortNum": 40000,
     "created": "2022-10-10T19:01:03.106Z",
-    "modified": "2022-10-10T19:01:03.106Z",
+    "modified": "2022-10-29T13:22:34.256Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"email\": \"vitor@gmail.com\",\n  \"pass\": \"123\"\n}",
+      "raw": "{\n  \"email\": \"renancavichi@gmail.com\",\n  \"pass\": \"Renan123\"\n}",
       "form": []
     },
     "tests": []
@@ -91,12 +91,12 @@
     "method": "POST",
     "sortNum": 50000,
     "created": "2022-10-10T20:19:20.158Z",
-    "modified": "2022-10-10T20:19:20.158Z",
+    "modified": "2022-10-29T13:24:20.892Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"idUser\": \"9\",\n  \"token\": \"8fd4ef4c44c3d475617d5c09600abc94b46e5128\"\n}",
+      "raw": "{\n  \"idUser\": \"\",\n  \"token\": \"\"\n}",
       "form": []
     },
     "tests": []
