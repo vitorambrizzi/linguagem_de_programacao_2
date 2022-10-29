@@ -142,6 +142,7 @@ class User {
             $stmt->bindParam(':pass', $this->pass);
             $stmt->execute();
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
+            $conn = null;
 
             if (is_array($user)) {
                 return $user['id'];
