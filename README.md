@@ -1,6 +1,16 @@
 # Linguagem de Programação II
-Exercises related to PHP Object-Oriented Programming, with the development of a Back-End API.<br>
+Web Informatics certificate subject destined to study PHP and Object-Oriented Programming, as we develop a RESTful API that will communicate with a [REACT front-end](https://github.com/vitorambrizzi/projeto_integrador_3).
+### Studied Technologies:
+- Object-Oriented Programming;
+- Static, Protected and Public Methods;
+- CORS Handling;
+- Receving data at PHP from body json;
+- .htaccess;
+- REST and RESTful APIs;
+- Status Code Management;
+- Headers Management; 
+- Route Treatment.
 
 **Author:** Vítor Ambrizzi<br>
 **Institution:** IFSP Câmpus Caraguatatuba<br>
-**Semester:** 2022-2<br>
+**Semester:** 2022-2
