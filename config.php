@@ -1,13 +1,13 @@
 <?php
 // PATHS AND FOLDERS
-define('BASE_PATH', '/vitor_ambrizzi/2022-2/linguagem_de_programacao_2-LP2I3/');
+define('BASE_PATH', '/linguagem_de_programacao_2/');
 define('CONTROLLERS_FOLDER', 'controllers/');
 define('HELPERS_FOLDER', 'helpers/');
 define('MODELS_FOLDER', 'models/');
 
 // DATABASE
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'social_music');
+define('DB_NAME', 'linguagem_de_programacao_2_db');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 
