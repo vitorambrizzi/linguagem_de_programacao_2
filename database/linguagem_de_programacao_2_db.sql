@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 31-Out-2022 às 20:58
+-- Tempo de geração: 31-Out-2022 às 21:30
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.0.13
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `social_music`
+-- Banco de dados: `linguagem_de_programacao_2_db`
 --
 
 -- --------------------------------------------------------
