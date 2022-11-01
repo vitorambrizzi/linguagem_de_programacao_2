@@ -91,7 +91,7 @@ class UserController {
         $avatar = $data['avatar'];
 
         $idUserLogged = Router::allowedRole('client');
-        if ($idUserLogged !== $id) {
+        if ($idUserLogged != $id) {
             $result['error']['message'] = 'Logged user unauthorized to update this profile!';
             Output::response($result, 403);
         }
