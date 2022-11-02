@@ -1,5 +1,5 @@
 # Linguagem de Programação II
-Web Informatics certificate subject destined to study PHP and Object-Oriented Programming, as we develop a RESTful API that will communicate with a [REACT front-end](https://github.com/vitorambrizzi/projeto_integrador_3).
+Web Informatics certificate subject destined to study PHP and Object-Oriented Programming, as we develop a RESTful API that will communicate with our own [REACT front-end](https://github.com/vitorambrizzi/projeto_integrador_3).
 ### Studied Technologies:
 - Object-Oriented Programming;
 - Static, Protected and Public Methods;
